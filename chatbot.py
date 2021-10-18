@@ -6,18 +6,13 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 # Create a new instance of a ChatBot
-bot = ChatBot(
-    'ChatbotTeste'
-    # logic_adapters=[
-    #     'chatterbot.logic.BestMatch'
-    # ]
-)
+bot = ChatBot('ChatbotTeste')
 
-trainer = ChatterBotCorpusTrainer(bot)
+# trainer = ChatterBotCorpusTrainer(bot)
 
-trainer.train(
-    "chatterbot.corpus.portuguese"
-)
+# trainer.train(
+#     "chatterbot.corpus.portuguese"
+# )
 
 
 # print('Escreva algo para começar...')
